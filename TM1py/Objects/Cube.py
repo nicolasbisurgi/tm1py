@@ -122,11 +122,6 @@ class Cube(TM1Object):
             return
 
         rules_statements = self.rules.text.splitlines()
-        if not len(rules_statements) == 1:
-            raise RuntimeError(
-                "The cube rules are not disabled correctly. "
-                "Must be 1 line of base64-encoded hash.")
-
         encoded_rules_statement = rules_statements[0]
         if not encoded_rules_statement.startswith(RULES_ENCODING_PREFIX):
             raise RuntimeError(
