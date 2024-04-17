@@ -1,4 +1,3 @@
-import base64
 import unittest
 
 from TM1py import Cube, Rules
