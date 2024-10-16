@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -e .[pandas, dev] 
+          pip install -e .[pandas,dev] 
 
       - name: Retrieve TM1 Connection Details
         run: echo "Retrieving TM1 connection details"
